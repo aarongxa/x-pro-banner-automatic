@@ -9,7 +9,8 @@ ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
 ACCESS_TOKEN_SECRET = os.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 
 # Authenticate with the Twitter API
-auth = tweepy.OAuth1UserHandler(API_KEY, API_SECRET_KEY, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+auth = tweepy.OAuthHandler(API_KEY, API_SECRET_KEY)
+auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
 def update_banner():

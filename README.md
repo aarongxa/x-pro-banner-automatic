@@ -1,4 +1,4 @@
-# Daily X.com Banner Updater
+# Automatic X.com Banner Updater
 
 This repository automates updating the profile banner on your X.com (formerly Twitter) account daily using GitHub Actions. A Python script selects a random banner image from a predefined directory and updates your profile.
 
@@ -35,4 +35,9 @@ my-github-repo/
 │
 ├── update_banner.py           # Python script for updating the banner
 ├── requirements.txt           # Dependencies for the Python script
+├── .env                       # Environment variables for API credentials
 └── README.md                  # This documentation
+```
+
+## Contact Me
+Contact me on X.com at [x.com/aarongxa](https://x.com/aarongxa)
